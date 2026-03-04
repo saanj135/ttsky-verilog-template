@@ -24,13 +24,13 @@ The 8-bit output is visible on the dedicated output pins (`uo_out`).
 
 The project can be tested by providing a clock signal and manipulating the reset and input pins. The following test were conducted:
 
-* **Reset:** Set rst_n to 0 to ensure the output uo_out is 0x00.
+* **Reset:** Set `rst_n` to 0 to ensure the output uo_out is 0x00.
 
-* **Enable:** Set ena to 1 and rst_n to 1 to begin operation.
+* **Enable:** Set ena to 1 and `rst_n` to 1 to begin operation.
 
-* **Accumulate:** Provide a value on ui_in (e.g., 10). On the next clock cycle, the output will show 10.
+* **Accumulate:** Provide a value on `ui_in` (e.g., 10). On the next clock cycle, the output will show 10.
 
-* **Hold:** Set ui_in to 0. The output should remain constant at the previous sum.
+* **Hold:** Set `ui_in` to 0. The output should remain constant at the previous sum.
 
 * **Overflow:** Add a value that forces the sum above 255 (e.g., if the sum is 200, add 100) and verify that the output wraps around (e.g., to 44).
 
