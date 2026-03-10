@@ -48,5 +48,7 @@ pinout:
   uio[6]: "unused"
   uio[7]: "unused"
 
+#to rerun test
+
 # Do not change!
 yaml_version: 6
